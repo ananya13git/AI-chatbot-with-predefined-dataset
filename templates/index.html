@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartAssist – Intelligent NLP Chatbot</title>
+    
+    <!-- Meta Descriptions & SEO -->
+    <meta name="description" content="SmartAssist is an intelligent NLP AI Chatbot powered by TF-IDF Vectorization and Cosine Similarity. Built with Flask, NLTK, and modern Web Technologies.">
+    <meta name="author" content="Senior AI & NLP Engineer">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for sleek UI Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Glassmorphic Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Animated Ambient Background Glowing Orbs -->
+    <div class="ambient-glow orb-1"></div>
+    <div class="ambient-glow orb-2"></div>
+    <div class="ambient-glow orb-3"></div>
+
+    <!-- Main Container -->
+    <div class="chat-wrapper">
+        
+        <!-- Chat Header Card -->
+        <header class="chat-header">
+            <div class="header-left">
+                <div class="avatar-container">
+                    <img src="{{ url_for('static', filename='chatbot.png') }}" alt="SmartAssist Bot Avatar" class="header-avatar">
+                    <span class="status-indicator online" title="Status: Online & Ready"></span>
+                </div>
+                <div class="bot-info">
+                    <h1 class="bot-title">SmartAssist AI <span class="badge-version">v1.0</span></h1>
+                    <p class="bot-status"><i class="fa-solid fa-brain"></i> TF-IDF + Cosine Similarity Engine Active</p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button id="clear-chat-btn" class="icon-btn" title="Clear Chat History">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Messages Body -->
+        <main class="chat-messages" id="chat-messages" aria-live="polite">
+            
+            <!-- Welcome Message from Bot -->
+            <div class="message-row bot-row">
+                <div class="msg-avatar-col">
+                    <img src="{{ url_for('static', filename='chatbot.png') }}" alt="Bot" class="msg-avatar">
+                </div>
+                <div class="msg-content-col">
+                    <div class="msg-bubble bot-bubble">
+                        <div class="msg-header">
+                            <span class="sender-name">SmartAssist</span>
+                            <span class="msg-time" id="initial-time">Just now</span>
+                        </div>
+                        <p class="msg-text">Hello there! 👋 I am <strong>SmartAssist</strong>, your AI & NLP assistant. Ask me questions about <em>Artificial Intelligence, Machine Learning, Python, Flask, Data Science</em>, or general concepts!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Suggestion Chips Container -->
+            <div class="suggestion-chips-wrapper" id="suggestion-chips">
+                <p class="chips-label"><i class="fa-solid fa-lightbulb"></i> Try asking:</p>
+                <div class="chips-grid">
+                    <button class="chip-btn" data-query="What is Artificial Intelligence?">
+                        <i class="fa-solid fa-microchip"></i> What is AI?
+                    </button>
+                    <button class="chip-btn" data-query="Explain Machine Learning">
+                        <i class="fa-solid fa-robot"></i> Machine Learning
+                    </button>
+                    <button class="chip-btn" data-query="What is Natural Language Processing?">
+                        <i class="fa-solid fa-comments"></i> What is NLP?
+                    </button>
+                    <button class="chip-btn" data-query="Why use Python for AI?">
+                        <i class="fa-brands fa-python"></i> Python for AI
+                    </button>
+                    <button class="chip-btn" data-query="Tell me a funny joke">
+                        <i class="fa-solid fa-face-laugh-beam"></i> Tell a joke
+                    </button>
+                    <button class="chip-btn" data-query="What is Flask web framework?">
+                        <i class="fa-solid fa-server"></i> What is Flask?
+                    </button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Typing Indicator (Hidden by default) -->
+        <div class="typing-indicator-container hidden" id="typing-indicator">
+            <div class="typing-avatar-col">
+                <img src="{{ url_for('static', filename='chatbot.png') }}" alt="Bot" class="msg-avatar">
+            </div>
+            <div class="typing-bubble">
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+                <span class="typing-dot"></span>
+                <span class="typing-label">SmartAssist is thinking...</span>
+            </div>
+        </div>
+
+        <!-- Chat Input Footer -->
+        <footer class="chat-footer">
+            <form id="chat-form" autocomplete="off">
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="user-input" 
+                        placeholder="Type your question here... (e.g. What is Deep Learning?)" 
+                        required 
+                        aria-label="User Message Input"
+                    />
+                    <button type="submit" id="send-btn" class="send-btn" title="Send Message" aria-label="Send Message">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="footer-meta">
+                <span>Powered by NLTK & scikit-learn TF-IDF Vectorizer</span>
+                <span id="char-count">0 / 250</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Application Script -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

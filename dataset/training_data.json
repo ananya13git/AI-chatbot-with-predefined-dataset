@@ -1,0 +1,466 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "is anyone there",
+        "greetings",
+        "hello there",
+        "whats up"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! What can I help you with?",
+        "Hey! Nice to meet you. How can I help?",
+        "Greetings! How can I make your day easier?",
+        "Hello there! What's on your mind today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "talk to you later",
+        "i am leaving",
+        "have a good day",
+        "farewell",
+        "exit",
+        "quit",
+        "bye bye"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day ahead.",
+        "Bye! Feel free to chat again anytime.",
+        "Farewell! Hope I was helpful today.",
+        "See you later! Take care.",
+        "Have a great day! Goodbye!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "that's helpful",
+        "awesome, thanks",
+        "thanks for helping",
+        "much appreciated",
+        "thank you so much",
+        "perfect, thanks",
+        "thanks a lot",
+        "you are very helpful"
+      ],
+      "responses": [
+        "You're very welcome! I'm happy to help.",
+        "Anytime! Let me know if you need anything else.",
+        "It's my pleasure! Glad I could be of assistance.",
+        "You are welcome! Don't hesitate to ask more questions.",
+        "Happy to help! Let me know if there's anything else."
+      ]
+    },
+    {
+      "tag": "ai",
+      "patterns": [
+        "what is ai",
+        "define artificial intelligence",
+        "explain ai",
+        "what does artificial intelligence mean",
+        "tell me about ai",
+        "how does ai work",
+        "what is artificial intelligence",
+        "why is ai important",
+        "can you explain artificial intelligence",
+        "give me a definition of ai"
+      ],
+      "responses": [
+        "Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems.",
+        "AI refers to the ability of computers to perform tasks that typically require human intelligence, such as reasoning, learning, and decision-making.",
+        "Artificial Intelligence is a broad field of computer science dedicated to building systems capable of performing tasks that normally require human intelligence.",
+        "AI is technology that enables computers and machines to simulate human learning, comprehension, problem solving, and decision making.",
+        "AI stands for Artificial Intelligence, which allows computers to learn from experience, adjust to new inputs, and perform human-like tasks."
+      ]
+    },
+    {
+      "tag": "machine_learning",
+      "patterns": [
+        "what is machine learning",
+        "define ml",
+        "explain machine learning",
+        "what does ml stand for",
+        "how does machine learning work",
+        "tell me about machine learning",
+        "what is ml",
+        "basics of machine learning",
+        "why do we use machine learning",
+        "can you explain ml"
+      ],
+      "responses": [
+        "Machine Learning (ML) is a subset of AI that enables systems to learn and improve from experience without being explicitly programmed.",
+        "ML stands for Machine Learning, where algorithms use historical data as input to predict new output values.",
+        "Machine Learning is the practice of using algorithms to parse data, learn from it, and then make a determination or prediction about something in the world.",
+        "ML is a method of data analysis that automates analytical model building, allowing computers to find hidden insights without being programmed where to look.",
+        "Machine Learning focuses on the development of computer programs that can access data and use it to learn for themselves."
+      ]
+    },
+    {
+      "tag": "deep_learning",
+      "patterns": [
+        "what is deep learning",
+        "define dl",
+        "explain deep learning",
+        "what does deep learning mean",
+        "how does deep learning work",
+        "tell me about deep learning",
+        "what is dl",
+        "basics of deep learning",
+        "why is deep learning used",
+        "can you explain deep learning"
+      ],
+      "responses": [
+        "Deep Learning is a subset of Machine Learning that is based on artificial neural networks with representation learning.",
+        "DL, or Deep Learning, structures algorithms in layers to create an 'artificial neural network' that can learn and make intelligent decisions on its own.",
+        "Deep Learning mimics the workings of the human brain in processing data and creating patterns for use in decision making.",
+        "Deep Learning uses multi-layered artificial neural networks to deliver state-of-the-art accuracy in tasks like speech recognition and object detection.",
+        "Deep Learning is neural network-based learning that handles complex high-dimensional unstructured data (like images or raw text) exceptionally well."
+      ]
+    },
+    {
+      "tag": "nlp",
+      "patterns": [
+        "what is nlp",
+        "define natural language processing",
+        "explain nlp",
+        "what does nlp stand for",
+        "how does natural language processing work",
+        "tell me about nlp",
+        "what is natural language processing",
+        "basics of nlp",
+        "why is nlp important",
+        "can you explain nlp"
+      ],
+      "responses": [
+        "Natural Language Processing (NLP) is a branch of AI that helps computers understand, interpret, and manipulate human language.",
+        "NLP combines computational linguistics with statistical, machine learning, and deep learning models to process human language.",
+        "Natural Language Processing allows machines to read, decipher, understand, and make sense of human languages in a valuable way.",
+        "NLP is the technology used to aid computers to understand human natural language. Applications include translation, chatbots, and sentiment analysis.",
+        "NLP stands for Natural Language Processing, which focuses on the interaction between data-processing computers and human languages."
+      ]
+    },
+    {
+      "tag": "python",
+      "patterns": [
+        "what is python",
+        "why use python",
+        "explain python programming",
+        "tell me about python language",
+        "what is python programming",
+        "is python easy to learn",
+        "what is python used for",
+        "basics of python",
+        "why is python popular",
+        "can you explain python"
+      ],
+      "responses": [
+        "Python is a high-level, interpreted programming language known for its readability, simplicity, and versatility.",
+        "Python is an open-source programming language widely used in web development, data science, automation, and machine learning.",
+        "Python is a popular programming language that supports multiple programming paradigms, including object-oriented and functional programming.",
+        "Python is clean, readable, and has a vast library ecosystem, making it the preferred language for AI, data analytics, and general-purpose software.",
+        "Python is a beginner-friendly language designed by Guido van Rossum, emphasizing code readability and clean syntax."
+      ]
+    },
+    {
+      "tag": "flask",
+      "patterns": [
+        "what is flask",
+        "explain flask framework",
+        "why use flask",
+        "what is flask in python",
+        "how does flask work",
+        "tell me about flask",
+        "is flask a web framework",
+        "basics of flask",
+        "why is flask popular",
+        "can you explain flask"
+      ],
+      "responses": [
+        "Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.",
+        "Flask is a lightweight Python web framework that provides the essentials for building web applications, APIs, and microservices.",
+        "Flask is a simple and flexible web framework for Python, allowing developers to scale up to complex applications easily.",
+        "Flask is based on Werkzeug and Jinja2, offering a lightweight core that gives developers complete control over databases and extensions.",
+        "Flask is popular because it is easy to understand for beginners, has no boilerplate code, and lets you build API endpoints rapidly."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what is the weather like",
+        "how is the weather",
+        "is it raining today",
+        "will it be sunny",
+        "tell me the weather forecast",
+        "what is the temperature today",
+        "how is the weather outside",
+        "is the weather nice",
+        "should i carry an umbrella today",
+        "what is the climate like"
+      ],
+      "responses": [
+        "I don't have access to live weather feeds right now, but I suggest checking your local weather app or looking outside!",
+        "I'm unable to check real-time weather conditions without a live API key. You might want to check weather.com or your phone's widget.",
+        "It's always sunny in the digital world! For your local weather, please check a real-time weather service.",
+        "I currently lack access to live weather telemetry. Please check your local forecast for real-time information.",
+        "Since I am an offline assistant, I cannot fetch current weather data. Please use a live search or weather application."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what is the current time",
+        "tell me the time",
+        "what time is it now",
+        "do you have the time",
+        "could you tell me the time",
+        "what is the time",
+        "current time please",
+        "please tell me the time",
+        "what hour is it",
+        "can you give me the time"
+      ],
+      "responses": [
+        "I operate in virtual time, but you can check your system tray or device clock for the exact local time!",
+        "As an AI, I don't track real-time hours on my own, but your current system clock is the best place to check.",
+        "Time is relative, but checking your phone or computer clock will give you the precise local time right now!",
+        "I do not have a built-in ticking clock, but you can find the current time on your active device screen.",
+        "I don't keep track of the timezone differences dynamically, so please refer to your system device clock."
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what is todays date",
+        "tell me the date",
+        "what is the date today",
+        "current date please",
+        "could you tell me the date",
+        "what date is it",
+        "please tell me the date",
+        "what day of the month is it",
+        "date today",
+        "can you give me the date"
+      ],
+      "responses": [
+        "Please check your active device calendar or taskbar for today's correct date and year.",
+        "I don't have real-time synchronization with calendar modules, so check your device's calendar for today's date.",
+        "Today is a great day! For the exact numerical date, look at your device system calendar.",
+        "I am an NLP model and do not maintain a live calendar tracker. Check your computer calendar for today's date.",
+        "For the current day, month, and year, please consult your computer or mobile device calendar."
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "tell me a joke",
+        "make me laugh",
+        "do you know any jokes",
+        "say something funny",
+        "crack a joke",
+        "share a funny joke",
+        "tell a joke please",
+        "can you tell jokes",
+        "joke of the day",
+        "give me a joke"
+      ],
+      "responses": [
+        "Why do programmers wear glasses? Because they can't C#!",
+        "Why did the computer go to the doctor? Because it had a virus!",
+        "How many programmers does it take to change a light bulb? None, that's a hardware problem!",
+        "There are 10 types of people in this world: those who understand binary, and those who don't.",
+        "Why did the developer go broke? Because he used up all his cache!"
+      ]
+    },
+    {
+      "tag": "college",
+      "patterns": [
+        "what is college",
+        "tell me about college life",
+        "why go to college",
+        "how to choose a college",
+        "importance of college",
+        "what is university",
+        "explain college education",
+        "what do people do in college",
+        "tell me about universities",
+        "why is college important"
+      ],
+      "responses": [
+        "College is an educational institution designed to provide higher education, training, and academic degrees to students.",
+        "College offers advanced education in specific fields of study, preparing individuals for professional careers and research opportunities.",
+        "A college or university is where you pursue higher learning, build lifelong networks, and gain specialized skills for the workforce.",
+        "College education opens doors to higher earnings, career opportunities, and deeper academic knowledge in your chosen field.",
+        "College is a place of learning and personal growth, offering lectures, projects, and social experiences that shape your career."
+      ]
+    },
+    {
+      "tag": "internship",
+      "patterns": [
+        "what is an internship",
+        "why do an internship",
+        "how to get an internship",
+        "benefits of internships",
+        "what does an intern do",
+        "explain internships",
+        "tell me about internships",
+        "should i do an internship",
+        "what is the purpose of an internship",
+        "how does an internship work"
+      ],
+      "responses": [
+        "An internship is a professional learning experience that offers meaningful, practical work related to a student's field of study or career interest.",
+        "Internships are temporary job placements that provide real-world experience, skill development, and professional networking opportunities.",
+        "Doing an internship helps you bridge the gap between classroom theory and industry practice, boosting your employability.",
+        "Internships give you exposure to workplace culture, let you work on real projects, and help you determine if a career path is right for you.",
+        "An internship is an excellent way to gain industry experience, acquire professional skills, and secure potential full-time job offers."
+      ]
+    },
+    {
+      "tag": "projects",
+      "patterns": [
+        "what are projects",
+        "how to build a project",
+        "why are projects important",
+        "what is a software project",
+        "tell me about projects",
+        "give me project ideas",
+        "how to start a coding project",
+        "importance of hands on projects",
+        "what is project based learning",
+        "can you explain projects"
+      ],
+      "responses": [
+        "Projects are structured, goal-oriented tasks that apply theoretical knowledge to solve real-world problems.",
+        "Building projects is crucial for hands-on learning, showcasing your skills, and building a professional portfolio for recruiters.",
+        "A project in software engineering is a collaborative or individual effort to design, code, and test an application that solves a problem.",
+        "Projects help you learn to debug, design architectures, handle exceptions, and structure code in a way that reading tutorials cannot.",
+        "To start a project, identify a problem you want to solve, choose your tech stack, outline requirements, and start coding iteratively!"
+      ]
+    },
+    {
+      "tag": "database",
+      "patterns": [
+        "what is a database",
+        "define database",
+        "explain database management",
+        "what does sql stand for",
+        "how do databases work",
+        "tell me about databases",
+        "what is db",
+        "why do we need databases",
+        "types of databases",
+        "can you explain databases"
+      ],
+      "responses": [
+        "A database is an organized collection of structured data, typically stored and accessed electronically from a computer system.",
+        "Databases allow for efficient storage, retrieval, modification, and management of data using Database Management Systems (DBMS).",
+        "There are Relational Databases (like MySQL, PostgreSQL, SQLite using SQL) and Non-Relational Databases (like MongoDB, Redis using NoSQL).",
+        "A database stores large amounts of information securely and handles concurrent queries from millions of users simultaneously.",
+        "SQL stands for Structured Query Language, which is the standard language used to communicate with relational database management systems."
+      ]
+    },
+    {
+      "tag": "cyber_security",
+      "patterns": [
+        "what is cyber security",
+        "explain cybersecurity",
+        "why is cyber security important",
+        "what does a cyber security specialist do",
+        "tell me about cyber security",
+        "how to secure my data",
+        "what is network security",
+        "basics of cyber security",
+        "why do we need cyber security",
+        "can you explain cybersecurity"
+      ],
+      "responses": [
+        "Cybersecurity is the practice of protecting systems, networks, programs, and data from digital attacks and unauthorized access.",
+        "Cyber security is vital because it protects personal, corporate, and governmental information from cybercriminals and data breaches.",
+        "Key concepts of cybersecurity include confidentiality, integrity, and availability (known as the CIA triad).",
+        "A cybersecurity specialist analyzes networks for vulnerabilities, implements firewalls, monitors traffic, and responds to active breaches.",
+        "To protect your data, use strong unique passwords, enable two-factor authentication (2FA), and keep your software updated."
+      ]
+    },
+    {
+      "tag": "data_science",
+      "patterns": [
+        "what is data science",
+        "define data science",
+        "explain data science",
+        "what does a data scientist do",
+        "how to become a data scientist",
+        "tell me about data science",
+        "why is data science important",
+        "basics of data science",
+        "what is data analytics",
+        "can you explain data science"
+      ],
+      "responses": [
+        "Data Science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data.",
+        "Data Science combines statistics, mathematics, programming (typically Python or R), and domain expertise to solve complex data problems.",
+        "A data scientist cleans raw data, performs exploratory data analysis (EDA), builds predictive models, and communicates findings to business stakeholders.",
+        "Data science helps organizations make data-driven decisions, optimize operations, predict trends, and personalize customer experiences.",
+        "Core techniques in data science include data wrangling, regression analysis, machine learning classification, clustering, and data visualization."
+      ]
+    },
+    {
+      "tag": "unknown_intent",
+      "patterns": [
+        "what is your fallback",
+        "how do you handle unknown questions",
+        "what happens when you dont know something",
+        "tell me about unknown intents",
+        "what is an unknown intent",
+        "how do you handle errors",
+        "what do you do if you dont understand",
+        "explain fallback mechanism",
+        "how do you process unmatched queries",
+        "what is the default response system"
+      ],
+      "responses": [
+        "When an input has low similarity, I direct the user to my fallback response system to request a rephrase.",
+        "If my TF-IDF matcher returns a confidence score below my threshold, I trigger a standard polite error message.",
+        "I handle unknown inputs using a Cosine Similarity threshold. If the score is too low, I ask for clarification.",
+        "My fallback handler is activated when user queries don't match any pre-trained intents closely enough.",
+        "I am designed to politely indicate that I couldn't understand and ask the user to rephrase when confidence is low."
+      ]
+    },
+    {
+      "tag": "bot_identity",
+      "patterns": [
+        "who are you",
+        "what is your name",
+        "who built you",
+        "who created you",
+        "what can you do",
+        "tell me about yourself",
+        "are you an ai",
+        "what are your capabilities",
+        "introduce yourself",
+        "how are you"
+      ],
+      "responses": [
+        "I am SmartAssist, an intelligent NLP chatbot powered by NLTK, TF-IDF Vectorization, and Cosine Similarity!",
+        "My name is SmartAssist! I am an AI assistant designed to answer questions about AI, Machine Learning, Python, and Data Science.",
+        "I am SmartAssist, a virtual AI assistant built to help you learn about computer science, NLP, and software engineering concepts.",
+        "I am doing great! I am SmartAssist, your AI assistant ready to help with any technical or domain questions.",
+        "I am an intelligent conversational AI chatbot. I can explain Artificial Intelligence, Machine Learning, Deep Learning, Python, Flask, and much more!"
+      ]
+    }
+  ]
+}
